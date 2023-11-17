@@ -268,17 +268,18 @@ script = ExtResource("1_yxkjn")
 
 [node name="AnimatedSprite" type="AnimatedSprite2D" parent="."]
 z_index = 1
-position = Vector2(19, -69)
+position = Vector2(98, -100)
 scale = Vector2(1.81553, 1.7441)
 sprite_frames = SubResource("SpriteFrames_57fk3")
 animation = &"attack"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(18, -56)
+position = Vector2(97, -85)
 shape = SubResource("CapsuleShape2D_dmw13")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+visible = false
 position = Vector2(86, -128)
 scale = Vector2(4.38247, 4.38247)
 zoom = Vector2(3, 3)

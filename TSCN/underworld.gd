@@ -5,7 +5,7 @@ func _on_area_2d_body_entered(body):
 
 
 func _on_area_2d_2_body_entered(body):
-	get_tree().change_scene_to_file("res://TSCN/menu.tscn")
+	get_tree().change_scene_to_file("res://TSCN/underworld_2.tscn")
 
 var animationPlayed = false
 @onready var anim = $door/AnimatedSprite2D
