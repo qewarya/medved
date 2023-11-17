@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dcx54fjqntcyk"]
+
+[ext_resource type="Script" path="res://die.gd" id="1_gdla0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2unji"]
+size = Vector2(116.25, 20)
+
+[node name="die" type="Node2D"]
+script = ExtResource("1_gdla0")
+
+[node name="Area2D3" type="Area2D" parent="."]
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3"]
+position = Vector2(425.875, 573)
+shape = SubResource("RectangleShape2D_2unji")
+
+[connection signal="body_entered" from="Area2D3" to="." method="_on_area_2d_3_body_entered"]

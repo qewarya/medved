@@ -1,0 +1,56 @@
+[gd_scene load_steps=10 format=3 uid="uid://4xq16boekak1"]
+
+[ext_resource type="Script" path="res://TSCN/menu.gd" id="1_0nbwh"]
+[ext_resource type="Texture2D" uid="uid://ck30ttsib0gl3" path="res://kamabCK.jpg" id="2_6i4ca"]
+
+[sub_resource type="Theme" id="Theme_r38e8"]
+
+[sub_resource type="SystemFont" id="SystemFont_d0m11"]
+font_names = PackedStringArray("Pixel Times")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_j0tgo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_s0mkb"]
+
+[sub_resource type="SystemFont" id="SystemFont_xnvph"]
+font_names = PackedStringArray("Pixel Times")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7q7wf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6i8ft"]
+
+[node name="menu" type="Node2D"]
+script = ExtResource("1_0nbwh")
+
+[node name="KamabCk" type="Sprite2D" parent="."]
+position = Vector2(622, 361)
+scale = Vector2(1.13091, 1)
+texture = ExtResource("2_6i4ca")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 458.0
+offset_top = 320.0
+offset_right = 799.0
+offset_bottom = 390.0
+theme = SubResource("Theme_r38e8")
+theme_override_fonts/font = SubResource("SystemFont_d0m11")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxEmpty_j0tgo")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_s0mkb")
+text = "Начать
+"
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 459.0
+offset_top = 424.0
+offset_right = 800.0
+offset_bottom = 494.0
+theme = SubResource("Theme_r38e8")
+theme_override_fonts/font = SubResource("SystemFont_xnvph")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxEmpty_7q7wf")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_6i8ft")
+text = "Выйти"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

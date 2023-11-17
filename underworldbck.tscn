@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://jnytgvn0s8p1"]
+
+[ext_resource type="Texture2D" uid="uid://djw03oe53lffk" path="res://Assets/zemlyaback/3.png" id="1_36fsy"]
+[ext_resource type="Texture2D" uid="uid://ct1fk3dbqgqri" path="res://Assets/zemlyaback/2.png" id="2_ljjol"]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+layer = 1
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+position = Vector2(0, 228)
+motion_scale = Vector2(0.9, 0.9)
+motion_mirroring = Vector2(1243, 0)
+
+[node name="3" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(623, 363)
+scale = Vector2(3.23958, 3.30556)
+texture = ExtResource("1_36fsy")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+position = Vector2(0, 228)
+motion_scale = Vector2(0.8, 0.8)
+motion_mirroring = Vector2(1243, 0)
+
+[node name="2" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(623.5, 360)
+scale = Vector2(3.23698, 3.33333)
+texture = ExtResource("2_ljjol")

@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://5qti66swgjtb"]
+
+[ext_resource type="Texture2D" uid="uid://dj66yuo2q5vsl" path="res://TreeSet/back.png" id="1_ot23e"]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+position = Vector2(575.5, 326)
+scale = Vector2(2.9974, 2.68333)
+motion_mirroring = Vector2(1152, 0)
+
+[node name="Back" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+scale = Vector2(3, 2.7)
+texture = ExtResource("1_ot23e")
