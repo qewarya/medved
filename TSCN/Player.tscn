@@ -1,6 +1,6 @@
 [gd_scene load_steps=37 format=3 uid="uid://b1jj44upf3ur6"]
 
-[ext_resource type="Script" path="res://TSCN/character_body_2d.gd" id="1_yxkjn"]
+[ext_resource type="Script" path="res://TSCN/Player.gd" id="1_sx84k"]
 [ext_resource type="Texture2D" uid="uid://cmh3dfjdr8eq2" path="res://Assets/char/16x16 knight 1 v3.png" id="2_at6rp"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_i63pc"]
@@ -261,25 +261,24 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dmw13"]
+radius = 13.0
+height = 68.0
 
 [node name="Player" type="CharacterBody2D"]
-position = Vector2(-18, 56)
-script = ExtResource("1_yxkjn")
+script = ExtResource("1_sx84k")
 
 [node name="AnimatedSprite" type="AnimatedSprite2D" parent="."]
 z_index = 1
-position = Vector2(71, -154)
-scale = Vector2(1.81553, 1.7441)
+position = Vector2(0, -9.53674e-07)
+scale = Vector2(1.95312, 1.90625)
 sprite_frames = SubResource("SpriteFrames_57fk3")
 animation = &"attack"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(69, -142)
 shape = SubResource("CapsuleShape2D_dmw13")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(98, -144)
 scale = Vector2(4.38247, 4.38247)
 zoom = Vector2(3, 3)
 process_callback = 0

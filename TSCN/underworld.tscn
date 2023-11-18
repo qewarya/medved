@@ -1,10 +1,11 @@
-[gd_scene load_steps=17 format=3 uid="uid://n5scq1mihs64"]
+[gd_scene load_steps=18 format=3 uid="uid://n5scq1mihs64"]
 
 [ext_resource type="PackedScene" uid="uid://5phlmee4wpp5" path="res://TSCN/parallax_dngn.tscn" id="1_jjtij"]
 [ext_resource type="Script" path="res://TSCN/underworld.gd" id="1_xm7yl"]
 [ext_resource type="Script" path="res://underworldbck.gd" id="2_ci3dc"]
 [ext_resource type="PackedScene" path="res://underworldbck.tscn" id="4_wgj0w"]
 [ext_resource type="PackedScene" uid="uid://b1jj44upf3ur6" path="res://TSCN/Player.tscn" id="5_3debm"]
+[ext_resource type="AudioStream" uid="uid://cxoyv3imh16yh" path="res://SOUND/newsonkgame.mp3" id="6_kxve1"]
 [ext_resource type="Texture2D" uid="uid://degn8t4gttwqd" path="res://Assets/Dungeon Tile Set/Dungeon Tile Set.png" id="6_v2rwx"]
 [ext_resource type="Texture2D" uid="uid://bgifa1py4370w" path="res://Assets/dveranimation.png" id="9_osv6s"]
 
@@ -471,7 +472,7 @@ script = ExtResource("2_ci3dc")
 [node name="ParallaxBackground2" parent="." instance=ExtResource("1_jjtij")]
 
 [node name="Player" parent="." instance=ExtResource("5_3debm")]
-position = Vector2(24, 717)
+position = Vector2(45, 564)
 
 [node name="TileMap2" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_5fbe5")
@@ -524,6 +525,12 @@ monitorable = false
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
 position = Vector2(1169, 487)
 shape = SubResource("RectangleShape2D_s8yfe")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(24, 717)
+stream = ExtResource("6_kxve1")
+volume_db = -25.0
+autoplay = true
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="Area2D3" to="." method="_on_area_2d_3_body_entered"]

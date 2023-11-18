@@ -1,7 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://4xq16boekak1"]
+[gd_scene load_steps=11 format=3 uid="uid://4xq16boekak1"]
 
 [ext_resource type="Script" path="res://TSCN/menu.gd" id="1_0nbwh"]
 [ext_resource type="Texture2D" path="res://kamabCK.jpg" id="2_6i4ca"]
+[ext_resource type="AudioStream" uid="uid://dwgg4sjb1phvu" path="res://SOUND/MainMenu.mp3" id="3_rhfm4"]
 
 [sub_resource type="Theme" id="Theme_r38e8"]
 
@@ -51,6 +52,11 @@ theme_override_font_sizes/font_size = 32
 theme_override_styles/normal = SubResource("StyleBoxEmpty_7q7wf")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_6i8ft")
 text = "Выйти"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_rhfm4")
+volume_db = -25.0
+autoplay = true
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
