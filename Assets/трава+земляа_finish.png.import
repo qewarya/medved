@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b20t3ic6xjj60"
-path="res://.godot/imported/Layer 2.png-ca1fdfff729837bf28169205a3d722f3.ctex"
+uid="uid://2gd8co7sa21u"
+path="res://.godot/imported/трава+земляа_finish.png-54e5d87f26745c6012fbea94a5d4900b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/New folder (2)/Layer 2.png"
-dest_files=["res://.godot/imported/Layer 2.png-ca1fdfff729837bf28169205a3d722f3.ctex"]
+source_file="res://Assets/трава+земляа_finish.png"
+dest_files=["res://.godot/imported/трава+земляа_finish.png-54e5d87f26745c6012fbea94a5d4900b.ctex"]
 
 [params]
 

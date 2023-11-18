@@ -3,8 +3,8 @@
 [ext_resource type="PackedScene" uid="uid://5phlmee4wpp5" path="res://TSCN/parallax_dngn.tscn" id="1_jjtij"]
 [ext_resource type="Script" path="res://TSCN/underworld.gd" id="1_xm7yl"]
 [ext_resource type="Script" path="res://underworldbck.gd" id="2_ci3dc"]
-[ext_resource type="PackedScene" uid="uid://bqcchwo7hk61u" path="res://TSCN/character_body_2d.tscn" id="2_oicre"]
-[ext_resource type="PackedScene" uid="uid://jnytgvn0s8p1" path="res://underworldbck.tscn" id="4_wgj0w"]
+[ext_resource type="PackedScene" path="res://underworldbck.tscn" id="4_wgj0w"]
+[ext_resource type="PackedScene" uid="uid://b1jj44upf3ur6" path="res://TSCN/Player.tscn" id="5_3debm"]
 [ext_resource type="Texture2D" uid="uid://degn8t4gttwqd" path="res://Assets/Dungeon Tile Set/Dungeon Tile Set.png" id="6_v2rwx"]
 [ext_resource type="Texture2D" uid="uid://bgifa1py4370w" path="res://Assets/dveranimation.png" id="9_osv6s"]
 
@@ -470,8 +470,7 @@ script = ExtResource("2_ci3dc")
 
 [node name="ParallaxBackground2" parent="." instance=ExtResource("1_jjtij")]
 
-[node name="Player" parent="." instance=ExtResource("2_oicre")]
-position = Vector2(112, 575)
+[node name="Player" parent="." instance=ExtResource("5_3debm")]
 
 [node name="TileMap2" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_5fbe5")

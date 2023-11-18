@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://rjgjmmr8yv8p"
-path="res://.godot/imported/лес-4фон_scaled_6x_pngcrushed.png-51520788cefc94a44c51ae17bed9b753.ctex"
+uid="uid://cwjx5nnuytnfg"
+path="res://.godot/imported/мост_finish.png-800ecf25bb9bd1afa0edabb41b1965de.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/фон-леса/лес-4фон_scaled_6x_pngcrushed.png"
-dest_files=["res://.godot/imported/лес-4фон_scaled_6x_pngcrushed.png-51520788cefc94a44c51ae17bed9b753.ctex"]
+source_file="res://Assets/мост_finish.png"
+dest_files=["res://.godot/imported/мост_finish.png-800ecf25bb9bd1afa0edabb41b1965de.ctex"]
 
 [params]
 

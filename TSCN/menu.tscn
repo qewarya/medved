@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://4xq16boekak1"]
 
 [ext_resource type="Script" path="res://TSCN/menu.gd" id="1_0nbwh"]
-[ext_resource type="Texture2D" uid="uid://ck30ttsib0gl3" path="res://kamabCK.jpg" id="2_6i4ca"]
+[ext_resource type="Texture2D" path="res://kamabCK.jpg" id="2_6i4ca"]
 
 [sub_resource type="Theme" id="Theme_r38e8"]
 
