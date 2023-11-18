@@ -1,10 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://m8qi4ss6jvce"]
+[gd_scene load_steps=10 format=3 uid="uid://m8qi4ss6jvce"]
 
 [ext_resource type="PackedScene" path="res://lvl1prlx.tscn" id="1_8o74d"]
 [ext_resource type="Script" path="res://TSCN/lvl_1.gd" id="1_nwwt4"]
 [ext_resource type="Texture2D" path="res://Assets/Free Pixel Art plataformer painted style/PNG/tileset.png" id="3_rvr5m"]
 [ext_resource type="PackedScene" uid="uid://b1jj44upf3ur6" path="res://TSCN/Player.tscn" id="5_fdqw6"]
 [ext_resource type="PackedScene" uid="uid://dtm3qax65bfdu" path="res://TSCN/tile_msap.tscn" id="5_ffkpq"]
+[ext_resource type="AudioStream" uid="uid://bagr31k1dh3qd" path="res://SOUND/MainOST.mp3" id="7_huslp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iuua2"]
 size = Vector2(167, 83)
@@ -304,5 +305,12 @@ position = Vector2(321, 409)
 
 [node name="Player" parent="Player" instance=ExtResource("5_fdqw6")]
 position = Vector2(-322, 276)
+
+[node name="Mob" type="Node2D" parent="."]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_huslp")
+volume_db = -25.0
+autoplay = true
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

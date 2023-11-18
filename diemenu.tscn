@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://c58l12ou5xjno"]
+[gd_scene load_steps=9 format=3 uid="uid://c07mvvqfv2su2"]
 
 [ext_resource type="Script" path="res://Diemenu.gd" id="1_xxb55"]
 [ext_resource type="PackedScene" uid="uid://5phlmee4wpp5" path="res://TSCN/parallax_dngn.tscn" id="2_t23ne"]
 [ext_resource type="Texture2D" uid="uid://t52f8am7a76g" path="res://Assets/char/diemenu.png" id="3_vmv2s"]
+[ext_resource type="AudioStream" uid="uid://6bu6qwi5fw0g" path="res://SOUND/die.mp3" id="4_c7ask"]
 
 [sub_resource type="Theme" id="Theme_jcf3g"]
 
@@ -47,6 +48,11 @@ theme_override_styles/normal = SubResource("StyleBoxEmpty_4r1xi")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_sjfqv")
 text = "Начать заново
 "
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_c7ask")
+volume_db = -25.0
+autoplay = true
 
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

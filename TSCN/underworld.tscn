@@ -471,6 +471,7 @@ script = ExtResource("2_ci3dc")
 [node name="ParallaxBackground2" parent="." instance=ExtResource("1_jjtij")]
 
 [node name="Player" parent="." instance=ExtResource("5_3debm")]
+position = Vector2(24, 717)
 
 [node name="TileMap2" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_5fbe5")
