@@ -261,21 +261,22 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dmw13"]
-radius = 13.0
-height = 68.0
+radius = 8.0
+height = 28.0
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_sx84k")
 
 [node name="AnimatedSprite" type="AnimatedSprite2D" parent="."]
 z_index = 1
-position = Vector2(0, -9.53674e-07)
-scale = Vector2(1.95312, 1.90625)
+position = Vector2(0, -11)
+scale = Vector2(1.82031, 1.77663)
 sprite_frames = SubResource("SpriteFrames_57fk3")
 animation = &"attack"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 4)
 shape = SubResource("CapsuleShape2D_dmw13")
 
 [node name="Camera2D" type="Camera2D" parent="."]

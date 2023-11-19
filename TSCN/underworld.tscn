@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://n5scq1mihs64"]
+[gd_scene load_steps=19 format=3 uid="uid://n5scq1mihs64"]
 
 [ext_resource type="PackedScene" uid="uid://5phlmee4wpp5" path="res://TSCN/parallax_dngn.tscn" id="1_jjtij"]
 [ext_resource type="Script" path="res://TSCN/underworld.gd" id="1_xm7yl"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://b1jj44upf3ur6" path="res://TSCN/Player.tscn" id="5_3debm"]
 [ext_resource type="AudioStream" uid="uid://cxoyv3imh16yh" path="res://SOUND/newsonkgame.mp3" id="6_kxve1"]
 [ext_resource type="Texture2D" uid="uid://degn8t4gttwqd" path="res://Assets/Dungeon Tile Set/Dungeon Tile Set.png" id="6_v2rwx"]
+[ext_resource type="Texture2D" uid="uid://cw6g506fqh1jq" path="res://Assets/circle.png" id="6_x04op"]
 [ext_resource type="Texture2D" uid="uid://bgifa1py4370w" path="res://Assets/dveranimation.png" id="9_osv6s"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_onprm"]
@@ -474,6 +475,12 @@ script = ExtResource("2_ci3dc")
 [node name="Player" parent="." instance=ExtResource("5_3debm")]
 position = Vector2(45, 564)
 
+[node name="PointLight2D" type="PointLight2D" parent="Player"]
+position = Vector2(3.8147e-06, 0)
+scale = Vector2(0.409375, 0.409375)
+energy = 1.44
+texture = ExtResource("6_x04op")
+
 [node name="TileMap2" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_5fbe5")
 format = 2
@@ -531,6 +538,10 @@ position = Vector2(24, 717)
 stream = ExtResource("6_kxve1")
 volume_db = -25.0
 autoplay = true
+
+[node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
+energy = 0.71
+blend_mode = 1
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="Area2D3" to="." method="_on_area_2d_3_body_entered"]
